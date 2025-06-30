@@ -61,7 +61,7 @@
             border-radius: 1.5rem;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             /* Ensure the wrapper has a defined height or content pushes it */
-            min-height: 70vh; /* Adjust as needed */
+            min-height: 100vh; /* Adjusted for more vertical space */
             display: flex; /* Use flex to center content in panels */
             align-items: center;
             justify-content: center;
@@ -86,6 +86,7 @@
             padding: 2rem; /* Consistent padding for all panels */
             background-color: #fdfaf6; /* Panel background */
             text-align: center;
+            overflow-y: hidden; /* Prevent vertical scroll on these panels unless specified */
         }
 
         /* Specific styles for the "paper" feel */
@@ -172,7 +173,7 @@
                 <!-- Panel 2: Middle Section -->
                 <div id="panelMiddleSection" class="invitation-panel">
                     <h3 class="text-4xl md:text-5xl font-bold mb-6 text-[#a0522d]">Welcome!</h3>
-                    <p class="text-lg md:text-xl text-[#5d4037] mb-8 max-w-prose">
+                    <p class="text-lg md:text-xl text-[#5d4037] mb-8">
                         We are absolutely thrilled to share our special day with you. Get ready for a celebration of love, laughter, and happily ever after!
                     </p>
                     <button id="continueBtn" class="btn-primary text-xl md:text-2xl">Continue</button>
@@ -489,4 +490,3 @@
     </script>
 </body>
 </html>
-
